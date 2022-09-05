@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -16,4 +20,103 @@ a {
 
 * {
   box-sizing: border-box;
+}
+.kuda-entry {
+  overflow-x: hidden;
+  height: 100%;
+}
+.kuda-entry--wrap {
+  overflow: hidden;
+}
+.kuda-header {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  left: 0;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 4px 13px rgb(0 0 0 / 5%);
+  z-index: 99;
+}
+.kuda-header--wrap {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.column--100 {
+    width: 100%;
+}
+.kuda-header--wrap {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.kuda-header--main > a {
+  text-decoration: none;
+  color: inherit;
+  min-width: 100px;
+}
+.kuda-menu--wrap {
+  margin-left: 10%;
+}
+.kuda-nav--menu {
+  margin-right: 45px;
+}
+[data-toggle=dropdown]>.no-link, [data-toggle=dropdown]>a {
+  height: 40px;
+  cursor: pointer;
+}
+.kuda-nav--menu a, .kuda-nav--menu p {
+  display: flex;
+  align-items: center;
+  color: #40196d;
+  font-size: .875rem;
+  font-weight: 700;
+}
+.dropDown {
+  margin-left: 7px;
+}
+p {
+  line-height: 1.5;
+}
+.dropdown-menu {
+  top: 44px!important;
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+  z-index: 1!important;
+}
+.dropdown-menu, .modal-menu {
+  display: block!important;
+  position: absolute;
+  padding-top: 0;
+  transition: opacity .5s cubic-bezier(.455,.03,0,1),top .5s cubic-bezier(.455,.03,0,1)!important;
+  width: max-content;
+}
+.drop-min--width {
+  min-width: 170px;
+}
+.kuda-dropdown--menu {
+  padding: 20px 0;
+  white-space: nowrap;
+  background: #fff;
+  border: 1px solid rgba(219,220,224,.5);
+  box-shadow: 15px 30px 40px rgb(64 25 109 / 7%);
+  border-radius: 5px;
+}
+.kuda-dropdown--menu li {
+  margin: 0!important;
+  padding: 0 26px;
+}
+.kuda-dropdown--menu > li > a {
+  border-radius: 5px;
+  padding: 10px 0;
+  font-weight: 500;
+  color: #000;
+  font-size: .875rem!important;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
 }
